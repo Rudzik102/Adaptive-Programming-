@@ -1,0 +1,34 @@
+﻿<Window x:Class="ProjectTPA.View.Master"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Width="640" Height="480"
+        MinWidth="640" MinHeight="480"
+        MaxWidth="640" MaxHeight="480"
+        Title="Tree Type"
+        DataContext="{StaticResource MasterViewModel}">
+    <Grid>
+        <StackPanel>
+            <ScrollViewer Height="400">
+                <TreeView x:Name="TypeView" ItemsSource="{Binding Tree}">
+                    <TreeView.ItemTemplate>
+                        <HierarchicalDataTemplate ItemsSource="{Binding Children}">
+                            <TextBlock Text="{Binding Name}" />
+                        </HierarchicalDataTemplate>
+                    </TreeView.ItemTemplate>
+                </TreeView>
+            </ScrollViewer>
+            <DockPanel Height="40">
+                <DockPanel HorizontalAlignment="Left">
+                    <TextBox VerticalAlignment="Center" HorizontalAlignment="Right" Width="431" Height="24" TextWrapping="Wrap" Text="{Binding Mode=OneWay, Path=FilePath, UpdateSourceTrigger=PropertyChanged}" Padding="4" Margin="0,8" />
+                    <Button x:Name="Browse" VerticalAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" Content="Browse" Command="{Binding BrowseCommand}" />
+                    <Button x:Name="Load" VerticalAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" Content="Load" Command="{Binding LoadCommand}" />
+                    <Button x:Name="Save" VerticalAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" Content="Save" Command="{Binding SaveCommand}" />
+                    <Button x:Name="LoadS" VerticalAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" Content="Adapt" Command="{Binding AdaptCommand}" />
+                </DockPanel>
+            </DockPanel>
+        </StackPanel>
+    </Grid>
+</Window>

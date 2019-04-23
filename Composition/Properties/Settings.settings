@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Composition.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ITraceSource" Type="System.String" Scope="User">
+      <Value Profile="(Default)">DatabaseTracer</Value>
+    </Setting>
+    <Setting Name="ISerializer" Type="System.String" Scope="User">
+      <Value Profile="(Default)">DatabaseSerializer</Value>
+    </Setting>
+    <Setting Name="ConsoleTracerDll" Type="System.String" Scope="User">
+      <Value Profile="(Default)">..\..\..\ConsoleTracer\bin\Debug</Value>
+    </Setting>
+    <Setting Name="XmlSerializerDll" Type="System.String" Scope="User">
+      <Value Profile="(Default)">..\..\..\XmlSerialization\bin\Debug</Value>
+    </Setting>
+    <Setting Name="DatabaseSerializerDll" Type="System.String" Scope="User">
+      <Value Profile="(Default)">..\..\..\Database\bin\Debug</Value>
+    </Setting>
+    <Setting Name="DatabaseTracerDll" Type="System.String" Scope="User">
+      <Value Profile="(Default)">..\..\..\DatabaseTracer\bin\Debug</Value>
+    </Setting>
+    <Setting Name="DatabaseConnectionString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=DESKTOP-ORQR3B8;Initial Catalog=TPAFINAL2;Integrated Security=True;Pooling=false</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

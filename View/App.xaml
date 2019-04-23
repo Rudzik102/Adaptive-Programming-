@@ -1,0 +1,9 @@
+﻿<Application x:Class="ProjectTPA.View.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ProjectTPA.ViewModel;assembly=ViewModel"
+             StartupUri="Master.xaml">
+    <Application.Resources>
+        <local:MasterViewModel x:Key="MasterViewModel" />
+    </Application.Resources>
+</Application>
